@@ -50,7 +50,7 @@ export default function MyComponent({ initialChats, upVotes1 = 3, upVotes2 = 10 
   };
 
   useEffect(() => {
-    const ws = new WebSocket('wss://backend-ws.100xdevs.com', 'echo-protocol');
+    const ws = new WebSocket('wss://domain_name.com', 'echo-protocol');
     setSocket(ws);
 
     ws.onopen = () => {
